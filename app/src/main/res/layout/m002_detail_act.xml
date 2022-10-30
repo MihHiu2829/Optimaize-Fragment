@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:text="con chó"
+        android:textStyle="bold"
+        android:id="@+id/tv_nameAnimal"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"/>
+
+
+
+    <TableRow
+        android:layout_height="200dp"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/bt_left"
+            android:src="@drawable/bt_left"
+            android:layout_width="0dp"
+            app:tint="@color/black" />
+        <ImageView
+            android:layout_width="0dp"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:id="@+id/iv_imageAnimal"
+            android:src="@drawable/icon_dog"
+            android:layout_height="200dp"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:id="@+id/bt_right"
+            android:src="@drawable/bt_right"
+            android:layout_height="match_parent"
+            app:tint="@color/black" />
+    </TableRow>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:text="Xác Nhận"
+        android:id="@+id/bt_confirm"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
